@@ -1,2 +1,4 @@
-io\github\bonigarcia\CucumberTest.class
-io\github\bonigarcia\CalculatorSteps.class
+com\mytest\cucumber\CucumberTest.class
+com\mytest\cucumber\CalculatorSteps.class
+com\mytest\twoscenarios\StepDefinitions.class
+com\mytest\twoscenarios\CucumberTest.class

@@ -15,7 +15,7 @@ Feature: Basic Arithmetic
     When I add <a> and <b>
     Then the result is <c>
 
-  Examples:
+  Examples: Several additions
     | a | b | c  |
     | 1 | 2 | 3  |
     | 3 | 7 | 10 |
