@@ -34,17 +34,3 @@ Feature: Some terse yet descriptive text of what is desired like bla bla 3 examp
     Then some testable outcome is achieved
     * something else we can check happens too
     But I don't see something else
-
-
-  Scenario Outline: feeding a cow <name> yum yum yum
-  scenario outline
-  description
-    Given the cow weighs <weight> kg
-    When we calculate the feeding requirements
-    Then the energy should be <energy> MJ
-
-    Examples:
-      | name | weight | energy |
-      | cow1 |  450   |  26500 |
-      | cow1 |  451   |  26501 |
-      | cow2 |  500   |  29500 |
