@@ -16,17 +16,27 @@
  */
 package com.mytest.cucumber;
 
-import org.junit.platform.suite.api.ConfigurationParameter;
-import org.junit.platform.suite.api.IncludeEngines;
-import org.junit.platform.suite.api.SelectClasspathResource;
-import org.junit.platform.suite.api.Suite;
+//import org.junit.platform.suite.api.ConfigurationParameter;
+//import org.junit.platform.suite.api.IncludeEngines;
+//import org.junit.platform.suite.api.SelectClasspathResource;
+//import org.junit.platform.suite.api.Suite;
+//
+//import static io.cucumber.junit.platform.engine.Constants.*;
 
-import static io.cucumber.junit.platform.engine.Constants.*;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
 
-@Suite
-@IncludeEngines("cucumber")
-@SelectClasspathResource("com/mytest/cucumber")
-@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "com.mytest.cucumber")
+//@Suite
+//@IncludeEngines("cucumber")
+//@SelectClasspathResource("com/mytest/cucumber")
+//@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "com.mytest.cucumber")
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "src/test/resources/com/mytest/cucumber/",
+        glue = "com.mytest.cucumber",
+        plugin = {"pretty"}
+)
 public class CucumberTest {
 
 }

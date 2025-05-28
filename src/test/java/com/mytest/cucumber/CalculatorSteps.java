@@ -17,7 +17,9 @@
 package com.mytest.cucumber;
 
 import static java.lang.invoke.MethodHandles.lookup;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+//import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 import static org.slf4j.LoggerFactory.getLogger;
 
 import org.slf4j.Logger;
@@ -57,6 +59,7 @@ public class CalculatorSteps {
     public void the_result_is(double expected) {
         Number value = calc.value();
         log.debug("Result: {} (expected {})", value, expected);
+//        assertEquals(expected, value);
         assertEquals(expected, value);
     }
 

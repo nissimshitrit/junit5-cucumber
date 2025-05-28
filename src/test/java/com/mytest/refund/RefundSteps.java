@@ -3,8 +3,9 @@ package com.mytest.refund;
 import io.cucumber.java.en.*;
 
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.Assert.assertEquals;
+//import static org.junit.jupiter.api.Assertions.assertEquals;
+//import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class RefundSteps {
@@ -31,7 +32,7 @@ public class RefundSteps {
     @Then("the refund should be {string}")
     public void the_refund_should_be(String expectedResult) {
         boolean expected = expectedResult.equalsIgnoreCase("approved");
-        assertEquals(expected, refundApproved, "Refund result mismatch");
+        assertEquals("Refund result mismatch",expected, refundApproved );
     }
 
     @Given("the ticket has not been used")
