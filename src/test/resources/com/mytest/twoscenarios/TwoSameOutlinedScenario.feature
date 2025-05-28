@@ -37,8 +37,6 @@ Feature: Some terse yet descriptive text of what is desired like bla bla 3 examp
 
 
   Scenario Outline: feeding a cow <name> yum yum yum
-  scenario outline
-  description
     Given the cow weighs <weight> kg
     When we calculate the feeding requirements
     Then the energy should be <energy> MJ
