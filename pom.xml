@@ -14,7 +14,7 @@
             <cucumber.version>7.5.0</cucumber.version>-->
             <junit-jupiter.version>5.12.2</junit-jupiter.version>
             <junit-platform-suite.version>1.12.2</junit-platform-suite.version>
-            <cucumber.version>7.22.2</cucumber.version>
+            <cucumber.version>7.23.0</cucumber.version>
             <maven-surefire-plugin.version>3.0.0-M8</maven-surefire-plugin.version>
 
             <java.version>21</java.version>
@@ -75,8 +75,7 @@
                             <configurationParameters>
                                 cucumber.publish.quiet=true
                                 cucumber.publish.enabled=false
-                                cucumber.junit-platform.naming-strategy=long
-                                cucumber.plugin=pretty
+                                cucumber.junit-platform.naming-strategy=surefire
                             </configurationParameters>
                         </properties>
                     </configuration>
@@ -84,7 +83,7 @@
                 <plugin>
                     <groupId>com.microfocus.adm.almoctane.bdd</groupId>
                     <artifactId>bdd2octane</artifactId>
-                    <version>1.1.12</version>
+                    <version>1.1.13</version>
                 </plugin>
             </plugins>
         </build>

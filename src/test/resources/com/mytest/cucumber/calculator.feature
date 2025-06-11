@@ -10,12 +10,12 @@ Feature: Basic Arithmetic
   Scenario: Substraction
     When I substract 7 to 2 
     Then the result is 5
+  Rule: additional tests
+      Scenario Outline: Several additions
+        When I add <a> and <b>
+        Then the result is <c>
 
-  Scenario Outline: Several additions
-    When I add <a> and <b>
-    Then the result is <c>
-
-  Examples: Several additions
-    | a | b | c  |
-    | 1 | 2 | 3  |
-    | 3 | 7 | 10 |
+      Examples: Several additions
+        | a | b | c  |
+        | 1 | 2 | 3  |
+        | 3 | 7 | 10 |
