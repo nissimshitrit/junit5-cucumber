@@ -17,7 +17,7 @@
             <cucumber.version>7.23.0</cucumber.version>
             <maven-surefire-plugin.version>3.0.0-M8</maven-surefire-plugin.version>
 
-            <java.version>21</java.version>
+            <java.version>11</java.version>
             <maven.compiler.target>${java.version}</maven.compiler.target>
             <maven.compiler.source>${java.version}</maven.compiler.source>
 
